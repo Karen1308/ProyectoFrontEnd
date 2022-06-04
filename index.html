@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
@@ -31,10 +31,10 @@
             </div>
             <nav>
                 <ul>
-                    <li>Categorias</li>
-                    <li>Pets</li>
-                    <li>Nosotros</li>
-                    <li>Contactanos</li>
+                    <a href=""><li><i class="fa-solid fa-paw"></i>Categorias</li></a>
+                    <a href=""><li><i class="fa-solid fa-paw"></i>Pets</li></a>
+                    <a href=""><li><i class="fa-solid fa-paw"></i>Nosotros</li></a>
+                    <a href=""><li><i class="fa-solid fa-paw"></i>Contactanos</li></a>
                 </ul>
             </nav>
         </div>
@@ -43,17 +43,20 @@
     <main>
         <section>
             <div id="banner">
-                <img src="./img/Slide.png" alt="">
-                <p>¡Es un placer tenerte aqui!</p>
-                <p>¡Comedores en descuento!</p>
-                <button>Comedores</button>
+                <div>
+                    <p id="banner-titulo">¡Es un placer tenerte aqui!</p>
+                    <p id="banner-subtitulo">¡Comedores en descuento!</p>
+                    <button>COMEDEROS</button>
+                </div>          
             </div>
         </section>
 
+        
+        
         <section id="productos">
             <div id="destacados">
                 <img src="./img/logo_patita.png" alt="">
-                <h1>Productos destacados</h1>
+                <h1>Productos Destacados</h1>
                 <nav>
                     <a href=""> Comedores </a>
                     <p> - </p>
@@ -66,31 +69,31 @@
                 <div class="articulo">
                     <img src="./img/juguete_churrasquito.jpg" alt="">
                     <p>Juguete Churrasquito</p>
-                    <p>$150</p>
+                    <p class="precio">$150</p>
                 </div>
                 <div class="articulo">
                     <img src="./img/comedero_para_perro.jpg" alt="">
                     <p>Comedero para perro</p>
-                    <p>$250</p>
+                    <p class="precio">$250</p>
                 </div>
                 <div class="articulo">
                     <img src="./img/juguete_huesito.jpg" alt="">
                     <p>Juguete Huesito</p>
-                    <p>$650</p>
+                    <p class="precio">$650</p>
                 </div>
+                
             </div>
         </section>
 
-        <section>
+        <section id="contacto">
             <form action="">
-                <h2>Contactanos</h2>
+                <h2>Contáctanos</h2>
                 <input type="text" name="" id="" placeholder="Nombre y Apellido">
                 <input type="email" name="" id="" placeholder="Ingresa tu correo electrónico">
                 <input type="" name="" id="" placeholder="Teléfono">
-                
                 <div id="form-botones">
-                    <button type="reset"> Resetear </button>
-                    <button type="submit"> Enviar </button>
+                    <button type="reset" id="btn-resetear"> Resetear </button>
+                    <button type="submit" id="btn-enviar"> Enviar </button>
                 </div>
             </form>
         </section>
@@ -98,6 +101,7 @@
     <footer>
         <p>Todos los derechos reservados Front End</p>
     </footer>
+    <script src="https://kit.fontawesome.com/99a2b445a2.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
