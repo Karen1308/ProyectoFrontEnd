@@ -7,12 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop</title>
 
+    <!-- Estilos de la pagina -->
     <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Fuentes Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
 <body>
     <header>
-        <div id="ofertas">
+        <div class="ofertas">
             <div>
                 <p>Grandes ofertas en comederos</p>
             </div>
@@ -25,33 +29,41 @@
                 </select>
             </div>
         </div>
-        <div id="nav-bar">
+        <nav class="nav-bar">
             <div id="logo">
-                <img src="./img/logo.png    " alt="">
+                <a href="./index.html"><img src="./img/logo.png" alt=""></a>
             </div>
-            <nav>
+            <div class="nav-bar-link" id="nav-bar-link">
                 <ul>
-                    <li>Categorias</li>
-                    <li>Pets</li>
-                    <li>Nosotros</li>
-                    <li>Contactanos</li>
+                    <li><i class="fa-solid fa-paw"></i><a href="#">Categorias</a></li>
+                    <li><i class="fa-solid fa-paw"></i><a href="#">Pets</a></li>
+                    <li><i class="fa-solid fa-paw"></i><a href="#">Nosotros</a></li>
+                    <li><i class="fa-solid fa-paw"></i><a href="#">Contactanos</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>          
+            <a href="#" class="toggle-bttn" id="toggle-bttn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+        </nav>
     </header>
 
     <main>
         <section>
-            <div id="banner">
-                <img src="./img/Slide.png" alt="">
-                <p>¡Es un placer tenerte aqui!</p>
-                <p>¡Comedores en descuento!</p>
-                <button>Comedores</button>
+            <div class="banner">
+                <div class="banner-info">
+                    <p class="banner-titulo">¡Es un placer tenerte aqui!</p>
+                    <p class="banner-text">¡Comedores en descuento!</p>
+                    <div class="banner-bttn">
+                        <button>Comedores</button>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="productos">
-            <div id="destacados">
+        <section>
+            <div class="destacados">
                 <img src="./img/logo_patita.png" alt="">
                 <h1>Productos destacados</h1>
                 <nav>
@@ -62,7 +74,7 @@
                     <a href=""> Comida </a>
                 </nav>
             </div>
-            <div id="cont-articulos">
+            <div class="cont-articulos">
                 <div class="articulo">
                     <img src="./img/juguete_churrasquito.jpg" alt="">
                     <p>Juguete Churrasquito</p>
@@ -80,24 +92,40 @@
                 </div>
             </div>
         </section>
-
+<!--
         <section>
             <form action="">
                 <h2>Contactanos</h2>
                 <input type="text" name="" id="" placeholder="Nombre y Apellido">
                 <input type="email" name="" id="" placeholder="Ingresa tu correo electrónico">
                 <input type="" name="" id="" placeholder="Teléfono">
-                
+
                 <div id="form-botones">
                     <button type="reset"> Resetear </button>
                     <button type="submit"> Enviar </button>
                 </div>
             </form>
-        </section>
+        </section> -->
     </main>
-    <footer>
-        <p>Todos los derechos reservados Front End</p>
-    </footer>
+    <!-- <footer>
+        <div class="footer-info">
+            <a href="">
+                <p>Localidad</p><i></i>
+            </a>
+        </div>
+        <div class="footer-derechos">
+            <p>Todos los derechos reservados Front End</p>
+        </div>
+    </footer> -->
+
+    
+    <!-- SCRIPTS -->
+    
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/99a2b445a2.js" crossorigin="anonymous"></script>
+
+    <!-- Index -->
+    <script src="./js/index.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
