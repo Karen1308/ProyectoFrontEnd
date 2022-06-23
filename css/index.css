@@ -8,6 +8,7 @@
     font-style: normal;
     text-decoration: none;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 body,
@@ -92,6 +93,10 @@ main {
 /**************************************************/
 /************ AQUI COMIENZA EL BANNER ************/
 /************************************************/
+#section-banner{
+    width: 100vw;
+}
+
 .banner {
     background-image: url('../img/banner.jpg');
     background-size: cover;
@@ -145,23 +150,57 @@ main {
 /**************************************************/
 /***** AQUI COMIENZA LA SECCION DE PRODUCTOS *****/
 /************************************************/
+.destacados{
+    text-align: center;
+}
+
+.destacados h1{
+    font-size: 3rem;
+}
+
 .destacados img {
     width: 100px;
     height: 100px;
 }
 
-.cont-articulos{
+.dest-nav-bar {
+    margin: 10px;
     display: flex;
+    justify-content: center;
 }
 
-.articulo{
+.destacados nav a,
+.destacados nav p {
+    color: #666666;
+    margin: 0px 10px;
+}
+
+.cont-articulos {
+    display: flex;
+    justify-content: center;
+}
+
+.articulo {
     margin: 10px;
     width: 250px;
-    height: 250px;
+    text-align: center;
+    background: #FBFAF6;
 }
 
-.articulo img{
+.articulo p{
+    margin: 10px;
+}
+
+.articulo img {
     width: 100%;
+}
+
+.articulo-nombre {
+    color: #3C2313;
+}
+
+.articulo-precio {
+    color: #F0A83E;
 }
 
 /**************************************************/
